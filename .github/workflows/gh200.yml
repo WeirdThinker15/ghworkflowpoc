@@ -7,3 +7,7 @@ jobs:
     steps:
       - name: Say hello
         run: echo "Hello from GH Actions Session"
+
+      - name: Run Shell Script
+        run: |
+          ./scripts/greet.sh
