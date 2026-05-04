@@ -8,6 +8,10 @@ jobs:
       - name: Say hello
         run: echo "Hello from GH Actions Session"
 
+      - name: Checkout Files
+        run: actions/checkout@v6
+
       - name: Run Shell Script
         run: |
+          chmod +x scripts/greet.sh
           ./scripts/greet.sh
